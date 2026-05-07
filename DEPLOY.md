@@ -23,9 +23,9 @@ Before publishing a new asset bundle:
 
 1. Build the public web app from `lockout-core`:
    ```bash
-   npm run build:web:public
+   npm run build:web
    ```
-2. Copy the contents of `dist/` into `docs/` in this repository.
+2. Copy the contents of `dist_web/` into `docs/` in this repository.
 3. Preserve `docs/404.html`, `docs/mobile-client/`, and `docs/data/`.
 4. Run pre-deploy verification above.
 5. Commit and push to `main` — GitHub Pages deploys automatically.
@@ -57,3 +57,4 @@ After every deployment:
 - This repository is public. Never commit internal owner assets, `.env` files, or private manifests here.
 - Public bootstrap data at `docs/data/public-bootstrap.json` must pass the public-safe slice export from `lockout-core` before deployment.
 - Internal owner builds must never appear in this repo's releases or linked from this site.
+- Supabase/shared-account runtime is disabled for V1; public copy must not promise global accounts until a future cloud-account release is explicitly enabled.

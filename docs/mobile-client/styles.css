@@ -4,11 +4,11 @@
   --bg: #0d0d0d;
   --card: #141414;
   --border: rgba(255,255,255,0.08);
-  --red: #ff2d55;
+  --red: #ff073a;
   --cyan: #00f0ff;
-  --gold: #ffd60a;
-  --purple: #bf5af2;
-  --green: #30d158;
+  --gold: #ff9f1c;
+  --purple: #ff007f;
+  --green: #00ffa3;
   --text: #f0f0f0;
   --muted: #666;
   --radius: 18px;
@@ -48,7 +48,7 @@ html, body {
   display: inline-block;
   padding: 0.3rem 0.75rem;
   border-radius: 999px;
-  background: rgba(255,45,85,0.15);
+  background: rgba(255,7,58,0.15);
   color: var(--red);
   font-size: 0.7rem;
   font-weight: 800;
@@ -94,7 +94,7 @@ input[type="text"]:focus { border-color: var(--red); }
 .btn-primary {
   background: linear-gradient(135deg, var(--red), #c0003a);
   color: #fff;
-  box-shadow: 0 0 20px rgba(255,45,85,0.3);
+  box-shadow: 0 0 20px rgba(255,7,58,0.3);
 }
 
 .error-msg {
@@ -184,15 +184,15 @@ input[type="text"]:focus { border-color: var(--red); }
   letter-spacing: 0.1em;
   opacity: 0.8;
 }
-.choice-btn.choice-a { background: rgba(255,45,85,0.2); color: #ff6b86; border: 1px solid rgba(255,45,85,0.3); }
+.choice-btn.choice-a { background: rgba(255,7,58,0.2); color: #ff6b86; border: 1px solid rgba(255,7,58,0.3); }
 .choice-btn.choice-b { background: rgba(0,240,255,0.15); color: #00f0ff; border: 1px solid rgba(0,240,255,0.25); }
-.choice-btn.choice-c { background: rgba(255,214,10,0.15); color: #ffd60a; border: 1px solid rgba(255,214,10,0.25); }
-.choice-btn.choice-d { background: rgba(191,90,242,0.15); color: #bf5af2; border: 1px solid rgba(191,90,242,0.25); }
+.choice-btn.choice-c { background: rgba(255,159,28,0.15); color: #ff9f1c; border: 1px solid rgba(255,159,28,0.25); }
+.choice-btn.choice-d { background: rgba(255,0,127,0.15); color: #ff007f; border: 1px solid rgba(255,0,127,0.25); }
 
-.choice-btn:hover.choice-a { box-shadow: 0 0 16px rgba(255,45,85,0.25); }
+.choice-btn:hover.choice-a { box-shadow: 0 0 16px rgba(255,7,58,0.25); }
 .choice-btn:hover.choice-b { box-shadow: 0 0 16px rgba(0,240,255,0.2); }
-.choice-btn:hover.choice-c { box-shadow: 0 0 16px rgba(255,214,10,0.2); }
-.choice-btn:hover.choice-d { box-shadow: 0 0 16px rgba(191,90,242,0.2); }
+.choice-btn:hover.choice-c { box-shadow: 0 0 16px rgba(255,159,28,0.2); }
+.choice-btn:hover.choice-d { box-shadow: 0 0 16px rgba(255,0,127,0.2); }
 
 /* Locked */
 .center-card { align-items: center; text-align: center; padding: 2.5rem 1.5rem; }
@@ -207,8 +207,8 @@ input[type="text"]:focus { border-color: var(--red); }
   border-radius: 12px;
   text-align: center;
 }
-.reveal-verdict.correct { background: rgba(48,209,88,0.15); color: var(--green); border: 1px solid rgba(48,209,88,0.3); }
-.reveal-verdict.wrong   { background: rgba(255,45,85,0.15);  color: var(--red);   border: 1px solid rgba(255,45,85,0.3); }
+.reveal-verdict.correct { background: rgba(0,255,163,0.15); color: var(--green); border: 1px solid rgba(0,255,163,0.3); }
+.reveal-verdict.wrong   { background: rgba(255,7,58,0.15);  color: var(--red);   border: 1px solid rgba(255,7,58,0.3); }
 
 .reveal-delta { font-size: 1.1rem; font-weight: 700; text-align: center; color: var(--gold); }
 .reveal-score { text-align: center; color: var(--muted); font-size: 0.85rem; }
@@ -223,9 +223,9 @@ input[type="text"]:focus { border-color: var(--red); }
   font-size: 0.9rem;
   background: rgba(255,255,255,0.04);
 }
-.reveal-choice.is-correct { background: rgba(48,209,88,0.12); color: var(--green); }
+.reveal-choice.is-correct { background: rgba(0,255,163,0.12); color: var(--green); }
 .reveal-choice.is-mine    { font-weight: 700; }
-.reveal-choice.is-mine.is-wrong { background: rgba(255,45,85,0.1); color: #ff6b86; }
+.reveal-choice.is-mine.is-wrong { background: rgba(255,7,58,0.1); color: #ff6b86; }
 
 /* Leaderboard */
 .leaderboard { display: flex; flex-direction: column; gap: 0.4rem; }
@@ -244,13 +244,13 @@ input[type="text"]:focus { border-color: var(--red); }
 .lb-score { font-weight: 700; color: var(--cyan); font-size: 0.9rem; }
 .lb-row.is-me { background: rgba(0,240,255,0.08); border: 1px solid rgba(0,240,255,0.15); }
 
-.final-board .lb-row:first-child { background: rgba(255,214,10,0.12); border: 1px solid rgba(255,214,10,0.2); }
+.final-board .lb-row:first-child { background: rgba(255,159,28,0.12); border: 1px solid rgba(255,159,28,0.2); }
 
 /* Reconnect overlay */
 #reconnect-bar {
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  background: rgba(255,45,85,0.9);
+  background: rgba(255,7,58,0.9);
   color: #fff;
   text-align: center;
   padding: 0.6rem;
